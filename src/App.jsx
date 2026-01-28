@@ -1,20 +1,22 @@
 import React from 'react';
-import Login from './component/Login';
+import Navbar from './component/Navbar'; 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+
+const Home = () => <div>Home Page</div>;
+const About = () => <div>About Page</div>;
+const Contact = () => <div>Contact Page</div>;
 
 const App = () => {
-  const items = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry'];
-  const menus= ['profile','settings','logout'];
-  const tabs=[
-    {label:'tab 1',content:<div>content of tab 1</div>},
-    {label:'tab 2',content:<div>content of tab 2</div>},
-    {label:'tab 3',content:<div>content of tab 3</div>},
-  ]
-  const user={name: "john doe",age: "23"};
   return (
-    <>
-    <Login />
-    </>
+    <BrowserRouter>
+      <Navbar />  
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
