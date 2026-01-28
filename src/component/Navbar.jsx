@@ -2,17 +2,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const linkStyle = {
-    marginRight: '10px',
-    textDecoration: 'none',
-    color: 'white',
-  };
-
   return (
-    <nav style={{ backgroundColor: "black", padding: "10px" }}>
-       <Link to="/" style={linkStyle}>Home</Link>
-       <Link to="/about" style={linkStyle}>About</Link>
-       <Link to="/contact" style={linkStyle}>Contact</Link>
+    <nav className="bg-gray-900 p-4 shadow-md">
+      <div className="max-w-5xl mx-auto flex space-x-6">
+        <Link 
+          to="/" 
+          className="text-white text-lg font-medium hover:text-blue-400 transition duration-200"
+        >
+          Home
+        </Link>
+        <Link 
+          to="/about" 
+          className="text-white text-lg font-medium hover:text-blue-400 transition duration-200"
+        >
+          About
+        </Link>
+        <Link 
+          to="/contact" 
+          className="text-white text-lg font-medium hover:text-blue-400 transition duration-200"
+        >
+          Contact
+        </Link>
+      </div>
     </nav>
   );
 };
