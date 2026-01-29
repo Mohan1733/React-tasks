@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './component/Navbar'; 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import EmployeeFetch from './component/EmployeeFetch'
+import Employee from './component/Employee'
 
 
 const Home = () => <div>Home Page</div>;
@@ -18,7 +18,7 @@ const App = () => {
     //     <Route path="/contact" element={<Contact />} />
     //   </Routes>
     // </BrowserRouter>
-    <EmployeeFetch />
+    <Employee />
   );
 };
 
