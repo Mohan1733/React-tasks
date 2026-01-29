@@ -3,6 +3,7 @@ import Navbar from './component/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Employee from './component/Employee'
 import Fetch from './component/Fetch';
+import Controlled from './component/Controlled';
 
 
 const Home = () => <div>Home Page</div>;
@@ -20,7 +21,8 @@ const App = () => {
     //   </Routes>
     // </BrowserRouter>
     // <Employee />
-    <Fetch />
+    // <Fetch />
+    <Controlled />
   );
 };
 
