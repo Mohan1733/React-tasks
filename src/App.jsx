@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Employee from './component/Employee'
 import Fetch from './component/Fetch';
 import Controlled from './component/Controlled';
+import Uncontrolled from './component/Uncontrolled';
 
 
 const Home = () => <div>Home Page</div>;
@@ -22,7 +23,8 @@ const App = () => {
     // </BrowserRouter>
     // <Employee />
     // <Fetch />
-    <Controlled />
+    // <Controlled />
+    <Uncontrolled />
   );
 };
 
