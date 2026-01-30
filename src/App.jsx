@@ -5,6 +5,7 @@ import Employee from './component/Employee'
 import Fetch from './component/Fetch';
 import Controlled from './component/Controlled';
 import Uncontrolled from './component/Uncontrolled';
+import Todo from './component/Todo';
 
 
 const Home = () => <div>Home Page</div>;
@@ -24,7 +25,8 @@ const App = () => {
     // <Employee />
     // <Fetch />
     // <Controlled />
-    <Uncontrolled />
+    // <Uncontrolled />
+    <Todo />
   );
 };
 
