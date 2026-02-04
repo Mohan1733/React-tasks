@@ -27,8 +27,8 @@ const App = () => {
     // <Fetch />
     // <Controlled />
     // <Uncontrolled />
-    // <Todo />
-    <EmployeeFetch />
+    <Todo />
+    // <EmployeeFetch />
   );
 };
 
