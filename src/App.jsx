@@ -7,6 +7,7 @@ import Controlled from './component/Controlled';
 import Uncontrolled from './component/Uncontrolled';
 import Todo from './component/Todo';
 import EmployeeFetch from './component/EmployeeFetch'
+import ShoppingCart from './component/ShoppingCart';
 
 
 const Home = () => <div>Home Page</div>;
@@ -27,8 +28,9 @@ const App = () => {
     // <Fetch />
     // <Controlled />
     // <Uncontrolled />
-    <Todo />
+    // <Todo />
     // <EmployeeFetch />
+    <ShoppingCart />
   );
 };
 
