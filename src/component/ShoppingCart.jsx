@@ -24,7 +24,7 @@ export default function ShoppingCart() {
   const totalPrice = cart.reduce((acc, item) => acc + item.price * item.qty, 0);
 
   return (
-    <div style={{ display: "flex", gap: "50px", padding: "20px" }}>
+    <div className="flex gap-4 p-5">
       <div>
         <h3>Products</h3>
         {PRODUCTS.map((p) => (
@@ -35,7 +35,7 @@ export default function ShoppingCart() {
         ))}
       </div>
 
-      <div style={{ borderLeft: "1px solid gray", paddingLeft: "20px" }}>
+      <div className="border-3 p-6">
         <h3>Your Cart</h3>
         {cart.map((item) => (
           <p key={item.id}>
